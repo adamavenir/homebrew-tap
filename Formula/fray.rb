@@ -5,13 +5,13 @@
 class Fray < Formula
   desc "Multi-agent work that flows without losing the thread."
   homepage "https://fray.so"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adamavenir/fray/releases/download/v0.4.0/fray_0.4.0_darwin_amd64.tar.gz"
-      sha256 "7e6059521fef4a38472478e73094c682312081ef1bc88cf542057ca1e8e9ae8a"
+      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_darwin_amd64.tar.gz"
+      sha256 "5c48d976359122d33a776f63093b38c6887a8472f69408cf85628537ead72b0b"
 
       def install
         bin.install "fray"
@@ -19,8 +19,8 @@ class Fray < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adamavenir/fray/releases/download/v0.4.0/fray_0.4.0_darwin_arm64.tar.gz"
-      sha256 "9246069ca628408b2545d9f5decceb9c5e9d21ac13f514f338713acc9e31982e"
+      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_darwin_arm64.tar.gz"
+      sha256 "11eec1f05baeedfb8f6b4831076fad4850ff953fb53ac90983cea009e6e96560"
 
       def install
         bin.install "fray"
@@ -31,16 +31,16 @@ class Fray < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adamavenir/fray/releases/download/v0.4.0/fray_0.4.0_linux_amd64.tar.gz"
-      sha256 "228495edd6d2609daab0e55eebca36a7ef3732326e7ae565a27c4601fa23bdab"
+      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_linux_amd64.tar.gz"
+      sha256 "7b6544f70dcce79eb758b2cd761200d6f3d41a6c6ba4a85a5f7ed0f85c2f3b1f"
       def install
         bin.install "fray"
         bin.install "fray-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adamavenir/fray/releases/download/v0.4.0/fray_0.4.0_linux_arm64.tar.gz"
-      sha256 "792ef3fb910c39adad03c461725b0e32128abfe0647676b859a3be0a9230763e"
+      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_linux_arm64.tar.gz"
+      sha256 "8cd06ebb440a3fbc24f54a9a8d5a644a8ccfa417e82edafe93f01f04c9d0bc21"
       def install
         bin.install "fray"
         bin.install "fray-mcp"
