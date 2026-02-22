@@ -1,8 +1,8 @@
 class Tk < Formula
   desc "Git-backed issue tracker for AI agents"
   homepage "https://github.com/adamavenir/ticket"
-  url "https://github.com/adamavenir/ticket/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "edb6f48e7d9738da60e29c85db5b2bb094d7957a90ce6a88c54ae847e2df17c8"
+  url "https://github.com/adamavenir/ticket/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "03d7b4fc3c9bdca97107a801c1f6a96dd08f6c153ad1e7ae079a2d129e63890d"
   license "MIT"
 
   def install
