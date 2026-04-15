@@ -1,8 +1,8 @@
 class Spy < Formula
   desc "Monitor active Claude Code and Codex conversations"
   homepage "https://github.com/adamavenir/spy"
-  url "https://github.com/adamavenir/spy/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "3ea09026cf2d3b44dded38c83cc4a67edec30dab839341cc01c4b233797effde"
+  url "https://github.com/adamavenir/spy/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "599b58c96dd23da6c76e986ac879a412370467856fa9966dc939a945748a9bac"
   license "MIT"
 
   depends_on "jq"
