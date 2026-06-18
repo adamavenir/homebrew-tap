@@ -5,24 +5,24 @@
 class Fray < Formula
   desc "Multi-agent work that flows without losing the thread."
   homepage "https://fray.so"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_darwin_amd64.tar.gz"
-      sha256 "5c48d976359122d33a776f63093b38c6887a8472f69408cf85628537ead72b0b"
+      url "https://github.com/adamavenir/fray/releases/download/v0.6.0/fray_0.6.0_darwin_amd64.tar.gz"
+      sha256 "bb5cbfc66915cf4025359028c7c78d3cbb9bb169c086573303672884bedcca5e"
 
-      def install
+      define_method(:install) do
         bin.install "fray"
         bin.install "fray-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_darwin_arm64.tar.gz"
-      sha256 "11eec1f05baeedfb8f6b4831076fad4850ff953fb53ac90983cea009e6e96560"
+      url "https://github.com/adamavenir/fray/releases/download/v0.6.0/fray_0.6.0_darwin_arm64.tar.gz"
+      sha256 "1026f59a86ba82cf310f83c4632cc2e910f5c82487d1ed913d062f02d91331d0"
 
-      def install
+      define_method(:install) do
         bin.install "fray"
         bin.install "fray-mcp"
       end
@@ -31,17 +31,17 @@ class Fray < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_linux_amd64.tar.gz"
-      sha256 "7b6544f70dcce79eb758b2cd761200d6f3d41a6c6ba4a85a5f7ed0f85c2f3b1f"
-      def install
+      url "https://github.com/adamavenir/fray/releases/download/v0.6.0/fray_0.6.0_linux_amd64.tar.gz"
+      sha256 "640001bd39f9368e3794bb079ccdcd3552d77133ef7ad36095a44d3889cbad8e"
+      define_method(:install) do
         bin.install "fray"
         bin.install "fray-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adamavenir/fray/releases/download/v0.5.0/fray_0.5.0_linux_arm64.tar.gz"
-      sha256 "8cd06ebb440a3fbc24f54a9a8d5a644a8ccfa417e82edafe93f01f04c9d0bc21"
-      def install
+      url "https://github.com/adamavenir/fray/releases/download/v0.6.0/fray_0.6.0_linux_arm64.tar.gz"
+      sha256 "f1d279a6ad28d347232fb3e2d120823af8eba5027a55cfaa1cbb50e75f5db9ec"
+      define_method(:install) do
         bin.install "fray"
         bin.install "fray-mcp"
       end
